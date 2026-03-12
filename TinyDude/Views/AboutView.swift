@@ -28,9 +28,9 @@ struct AboutView: View {
                 .foregroundStyle(.tertiary)
 
             HStack(spacing: 16) {
-                Link("Privacy Policy", destination: URL(string: "https://tinydude.app/privacy")!)
+                Link("Privacy Policy", destination: URL(string: "https://38light.github.io/tinydude/privacy.html")!)
                     .font(.caption)
-                Link("Terms of Use", destination: URL(string: "https://tinydude.app/terms")!)
+                Link("Terms of Use", destination: URL(string: "https://38light.github.io/tinydude/terms.html")!)
                     .font(.caption)
             }
         }
