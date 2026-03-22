@@ -110,6 +110,13 @@ final class ContentViewModel: ObservableObject {
 
     func startCompression() {
         guard !isProcessing, !pendingItems.isEmpty else { return }
+
+        // Prompt user to pick an output folder if none is selected
+        if settings.outputFolder == nil {
+            browseOutputFolder()
+            guard settings.outputFolder != nil else { return }
+        }
+
         processingTask = Task { await runCompression() }
     }
 

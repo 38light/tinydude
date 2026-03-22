@@ -25,7 +25,7 @@ struct CompressionSettings: Equatable {
     var quality: Double = 85          // 0–100
     var outputFormat: OutputFormat = .jpeg
     var stripMetadata: Bool = true
-    var outputFolder: URL? = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first
+    var outputFolder: URL? = nil
     var filenameSuffix: String = "_tiny"
     var resize: ResizeOptions = ResizeOptions()
 
