@@ -4,7 +4,7 @@ DerivedData/
 *.xcuserstate
 *.xcuserdatad/
 xcuserdata/
-*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+*.xcworkspace/
 
 # macOS
 .DS_Store
